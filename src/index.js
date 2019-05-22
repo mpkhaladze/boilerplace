@@ -1,10 +1,14 @@
+import './style.css'
+import Avatar from './maleUser.png'
 // import _ from 'lodash'
 function component() {
 	const element = document.createElement('div');
+	const avatar = new Image()
+	avatar.src = Avatar
 
-	// Lodash, currently included via a script, is required for this line to work
-	// element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 	element.innerHTML = 'Hello'
+	element.classList.add('hello')
+	element.appendChild(avatar)
 
 	return element;
 }
