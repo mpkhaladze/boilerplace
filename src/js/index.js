@@ -1,20 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { store } from './stateOfArt'
 import '../style.css'
-import Avatar from '../maleUser.png'
-// import _ from 'lodash'
-function component() {
-	const element = document.createElement('div');
-	const avatar = new Image()
-	avatar.src = Avatar
 
-	element.innerHTML = 'Hello'
-	element.classList.add('hello')
-	element.appendChild(avatar)
 
-	return element;
-}
+const App = () => (
+	<Provider store={store}>
+		<div className='hello'>something</div>
+	</Provider>
+)
 
-const wrapper = document.getElementById("create-article-form");
-wrapper ? ReactDOM.render(<div>Entry Point </div>, wrapper) : false;
-document.body.appendChild(component());
+ReactDOM.render(
+	<App />,
+	document.body.appendChild(document.createElement('main'))
+)
