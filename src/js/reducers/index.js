@@ -4,8 +4,6 @@ import { reducers as moduleReducers } from '../modules'
 import R from 'ramda'
 
 
-
-console.log('reducers')
 const context = require.context('./', true, /^((?!index).)*\.js$/)
 const reducers = R.pipe(
 	R.map(path => [basename(path, '.js'), context(path).default]),
