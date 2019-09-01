@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Routes from './routes'
 import { Provider } from 'react-redux'
 import { store } from './stateOfArt'
 import '../style.css'
@@ -7,7 +8,9 @@ import '../style.css'
 
 const App = () => (
 	<Provider store={store}>
-		<div className='hello'>something</div>
+		<React.Fragment>
+			<Routes />
+		</React.Fragment>
 	</Provider>
 )
 
