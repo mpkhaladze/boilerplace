@@ -32,16 +32,10 @@ module.exports = {
 				]
 			},
 			{
-				test:/\.(png|svg|jpg|gif)$/,
+				test: /\.(mp4|mp3|jpe?g|png|gif|swf|ttf|eot|svg|woff2?)(\?[a-z0-9]+)?$/,
 				use: [
 					'file-loader'
 					]
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: [
-					'file-loader'
-				]
 			}
 		]
 	},
@@ -51,5 +45,8 @@ module.exports = {
 			template: "./src/index.html",
 			filename: "index.html"
 		})
-	]
+	],
+	devServer: {
+		historyApiFallback: true
+	}
 }

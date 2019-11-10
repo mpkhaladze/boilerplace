@@ -18,8 +18,3 @@ const reducersFromContext = context => R.reduce(
 
 export const routes = routesFromContext(require.context('./', true, /\.\/\w+\/routes\/index\.js$/))
 export const reducers = reducersFromContext(require.context('./', true, /\.\/\w+\/reducers\/index\.js$/))
-
-export default {
-	routes,
-	reducers
-}
