@@ -1,4 +1,8 @@
+.env
+.gitattributes
 node_modules
-dist
+npm-debug.log
+public
+task.todo
+yarn-error.log
 .idea
-*.log
