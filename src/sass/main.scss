@@ -1,0 +1,10 @@
+html, body, main, .page-content, .application {
+    height: 100%
+}
+.spinLoading {
+    position: fixed;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    left: 50%;
+    z-index: 99999999
+}

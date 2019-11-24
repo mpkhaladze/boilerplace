@@ -1,0 +1,18 @@
+.optimus-selected {
+  border-style: none !important;
+  -webkit-appearance: none !important;
+  overflow: hidden !important;
+  background: transparent url('/images/drop_down.png') no-repeat right 10px center !important;
+  background-color: #ececec !important;
+  margin-top: 0.8rem !important;
+  width: 80%;
+}
+::placeholder {
+  font-size: 0.8em;
+}
+:-ms-input-placeholder {
+  font-size: 0.8em;
+}
+::-ms-input-placeholder {
+  font-size: 0.8em;
+}
